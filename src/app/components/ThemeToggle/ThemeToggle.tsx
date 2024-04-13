@@ -40,7 +40,7 @@ function ThemeToggle({ initialTheme }: { initialTheme: string }) {
   ));
 
   return (
-    <div>
+    <div className="absolute right-6 top-8 xl:right-[34%] xl:top-[11%]">
       <div className="flex justify-end gap-x-4 text-12 text-[var(--text-color-theme)]">
         <span>1</span>
         <span>2</span>

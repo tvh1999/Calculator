@@ -31,7 +31,7 @@ function RootLayout({
   return (
     <html data-colors-theme="Theme-1" lang="en" style={cookiesTheme}>
       <body
-        className={`flex justify-center items-center px-6 py-8 bg-[var(--background-theme)] ${leagueSpartan.className} xl:py-24`}
+        className={`flex justify-center items-center relative px-6 py-8 bg-[var(--background-theme)] ${leagueSpartan.className} xl:py-24`}
       >
         <ThemeToggle initialTheme={getCookiesValue} />
         {/* <Calculator initialTheme={getCookiesValue} /> */}
