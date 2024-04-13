@@ -8,7 +8,7 @@ import ThemeToggle from "./components/ThemeToggle/ThemeToggle";
 
 const leagueSpartan = League_Spartan({
   subsets: ["latin"],
-  weight: ["300", "500", "600"],
+  weight: "300",
 });
 
 export const metadata: Metadata = {
