@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Cookies from "js-cookie";
-import { motion } from "framer-motion";
 import { THEME_1, THEME_2, THEME_3 } from "@/utilities/THEME_COLORS";
 import ThemeButton from "../ThemeButton/ThemeButton";
 

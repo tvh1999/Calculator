@@ -3,7 +3,8 @@ import { League_Spartan } from "next/font/google";
 import { cookies } from "next/headers";
 import { THEME_1, THEME_2, THEME_3 } from "@/utilities/THEME_COLORS";
 import "./globals.css";
-import Calculator from "./page";
+// import Calculator from "./page";
+import ThemeToggle from "./components/ThemeToggle/ThemeToggle";
 
 const leagueSpartan = League_Spartan({
   subsets: ["latin"],
@@ -32,8 +33,9 @@ function RootLayout({
       <body
         className={`flex justify-center items-center px-6 py-8 bg-[var(--background-theme)] ${leagueSpartan.className} xl:py-24`}
       >
-        {/* <ThemeToggle initialTheme={getCookiesValue} /> */}
-        <Calculator initialTheme={getCookiesValue} />
+        <ThemeToggle initialTheme={getCookiesValue} />
+        {/* <Calculator initialTheme={getCookiesValue} /> */}
+        {children}
       </body>
     </html>
   );

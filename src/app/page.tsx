@@ -3,7 +3,7 @@ import React from "react";
 import ThemeToggle from "./components/ThemeToggle/ThemeToggle";
 import CalcNumberButtonsContainer from "./components/CalcNumberButtonsContainer/CalcNumberButtonsContainer";
 
-function Calculator({ initialTheme }: { initialTheme: string }) {
+function Page() {
   const [displayContent, setDisplayContent] = React.useState("0");
   const addingValueFnc = (value?: string): void =>
     setDisplayContent((prevState) => {
@@ -31,7 +31,7 @@ function Calculator({ initialTheme }: { initialTheme: string }) {
         <h1 className="text-32 text-[var(--text-color-theme)] font-extrabold">
           calc
         </h1>
-        <ThemeToggle initialTheme={initialTheme} />
+        {/* <ThemeToggle initialTheme={initialTheme} /> */}
       </header>
       <main className="">
         <div className="max-w-full w-full min-h-20 flex justify-end items-center py-3 px-6 bg-[var(--result-bg-color-theme)] rounded-lg mb-6">
@@ -50,4 +50,4 @@ function Calculator({ initialTheme }: { initialTheme: string }) {
   );
 }
 
-export default Calculator;
+export default Page;
